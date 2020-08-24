@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/karimabdelhameed/Botter/master/.github/images/ic_botter.png" alt="Botter">
+<img src="https://raw.githubusercontent.com/botter-live/botter.live-Android/master/.github/images/ic_botter.png" alt="Botter">
 
 ## Onboard, retain and support mobile users at scale
 Engage customers with in‑app messages and support them with an integrated knowledge base and help desk.
@@ -153,7 +153,7 @@ new BotterCustomization.Builder()
 | seBotterWelcomeText , setBotterWelcomeTextColor | Used to set the welcome screen header subtitle text and color. | <img src="https://raw.githubusercontent.com/botter-live/botter.live-Android/master/.github/images/3.jpg" alt="3">|
 |setBotterChatHeaderTitle , setBotterChatHeaderTitleColor | Used to set the main chat header title text and color | <img src="https://raw.githubusercontent.com/botter-live/botter.live-Android/master/.github/images/6.jpg" alt="6">|
 | setBotterChatBubbleColor , setBotterChatBubbleTextColor | Used to set the botter message bubble bg color and it’s text color. | <img src="https://raw.githubusercontent.com/botter-live/botter.live-Android/master/.github/images/7.jpg" alt="7">|
-| setSenderChatBubbleColor , setSenderChatBubbleTextColor | Used to set the sender/user message bubble bg color and it’s text color. | <img src="https://raw.githubusercontent.com/karimabdelhameed/Botter/master/.github/images/8.jpg" alt="8">|
+| setSenderChatBubbleColor , setSenderChatBubbleTextColor | Used to set the sender/user message bubble bg color and it’s text color. | <img src="https://raw.githubusercontent.com/botter-live/botter.live-Android/master/.github/images/8.jpg" alt="8">|
 | setBotterRegularFontFamily | Used to set the primary font all over the chat. |
 | setBotterSemiBoldFontFamily | Used to set the secondary font all over the chat. |
 
