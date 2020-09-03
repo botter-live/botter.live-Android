@@ -42,7 +42,7 @@ maven {
 <li> add Botter dependency under <strong>dependencies { </strong> section  
  
 ```
-implementation "com.bluecrunch:botter:1.3.6"
+implementation "com.bluecrunch:botter:1.3.7"
 ```
 
 ## Integration
@@ -122,7 +122,8 @@ new BotterCustomization.Builder()
 .setLauncherGravity(BotterCustomization.LauncherGravity.LEFT) // set the launcher icon to the left/right of your screen. (default right).
 .setDefaultLocal(BotterCustomization.Local.AR) // set default bot language either AR/EN. (default EN).
 .setLauncherIcon(R.drawable.) //set the launcher icon.
-.setBotterLogo(R.drawable.) //set the chat logo.
+.setBotterLogo(R.drawable.) //set the chat logo & seen icon logo.
+.setWelcomeBrandLogo(R.drawable.) //set the welcome screen brand logo.
 .setBotterAccentColor(R.color.) //set the chat accent color.
 .setBotterHeadlineText("") // set welcome screen headline text.
 .setBotterHeadlineTextColor(R.color.) // set welcome screen headline text color.
@@ -154,6 +155,8 @@ new BotterCustomization.Builder()
 |setBotterChatHeaderTitle , setBotterChatHeaderTitleColor | Used to set the main chat header title text and color | <img src="https://raw.githubusercontent.com/botter-live/botter.live-Android/master/.github/images/6.jpg" alt="6">|
 | setBotterChatBubbleColor , setBotterChatBubbleTextColor | Used to set the botter message bubble bg color and it’s text color. | <img src="https://raw.githubusercontent.com/botter-live/botter.live-Android/master/.github/images/7.jpg" alt="7">|
 | setSenderChatBubbleColor , setSenderChatBubbleTextColor | Used to set the sender/user message bubble bg color and it’s text color. | <img src="https://raw.githubusercontent.com/botter-live/botter.live-Android/master/.github/images/8.jpg" alt="8">|
+| setWelcomeBrandLogo | Used to set the welcome screen brand logo. |
+| setAgentDefaultIcon | Used to set the default agent chant icon. |
 | setBotterRegularFontFamily | Used to set the primary font all over the chat. |
 | setBotterSemiBoldFontFamily | Used to set the secondary font all over the chat. |
 
