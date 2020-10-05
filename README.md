@@ -104,6 +104,10 @@ You’ll need to update your manifest to use your application:
 👋 Contact us with any integration/issues at [Botter - Contact us page](https://botter.ai/contact/). If you bump into any problems or need more support, just start a conversation with our support team.
 
 ## Push Notifications (FCM)
+Below, we’ll show you how to send push notifications to your customers, with Firebase Cloud Messaging (FCM) in Botter.
+
+###Step 1. Enable Google services for your app
+
 
 
 ## Customizations
