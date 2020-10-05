@@ -151,7 +151,7 @@ Click the <strong>Next</strong> button and then skip the verification step.
 
 ### Step :three:: Add your Server key to Botter for Android settings
 
-Finally, click the settings cog and select <strong>‘Project settings’</strong>, then <strong>‘Cloud Messaging tab’</strong> and copy your Server key.
+Finally, click the settings icon on top left and select <strong>‘Project settings’</strong>, then <strong>‘Cloud Messaging tab’</strong> and copy your Server key.
 
 
 <img src="https://raw.githubusercontent.com/botter-live/botter.live-Android/master/.github/images/fcm_server_key.png" alt="fcm_server_key">
