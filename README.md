@@ -129,6 +129,91 @@ Enter your app’s package name and click <strong>‘Register App’</strong>.
 
 Click the button <strong>"Download google-services.json"</strong> to download the config file. You’ll need to move that file into the same directory as your application level `build.gradle`.
 
+<img src="https://raw.githubusercontent.com/botter-live/botter.live-Android/master/.github/images/fcm_json_file.png" alt="fcm_json_file">
+
+Click <strong>"next"</strong> and then in your app `build.gradle` you will need to add the following lines to your dependencies:
+
+```
+dependencies {
+    implementation 'com.google.firebase:firebase-messaging:20.2+'
+}
+```
+
+At the bottom of your `build.gradle` you must add:
+
+```
+apply plugin: 'com.google.gms.google-services'
+```
+
+It is important that this is at the very end of the file.
+
+Click the <strong>Next</strong> button and then skip the verification step.
+
+### Step :three:: Add your Server key to Botter for Android settings
+
+Finally, click the settings cog and select <strong>‘Project settings’</strong>, then <strong>‘Cloud Messaging tab’</strong> and copy your Server key.
+
+
+<img src="https://raw.githubusercontent.com/botter-live/botter.live-Android/master/.github/images/fcm_server_key.png" alt="fcm_server_key">
+
+
+Open your Botter app’s settings and select <strong>‘Installation -> Android’</strong>. Then find the <strong>‘Enable Push Notifications’</strong> section. Here you'll be able to paste and save your Server API key.
+
+
+### Step :four:: Setting your FCM icon (optional)
+If you want to add a custom icon for your notifications, just add an image named ic_botter_push_icon.png to each of your supported densities. Please note that vector drawables cannot be used here. For example:
+
+```
+/res/drawable-xxxhdpi/ic_botter_push_icon.png 
+/res/drawable-xxhdpi/ic_botter_push_icon.png 
+/res/drawable-xhdpi/ic_botter_push_icon.png 
+/res/drawable-hdpi/ic_botter_push_icon.png 
+/res/drawable-mdpi/ic_botter_push_icon.png
+```
+
+We recommend following these [material design guidelines](https://material.io/design) for producing this icon or you can directly use [this link](http://romannurik.github.io/AndroidAssetStudio/icons-notification.html#source.type=image&source.space.trim=1&source.space.pad=0&name=ic_botter_push_icon
+) to generate your notification icon (recommended white icon 72x72 px.).
+
+### Step :five:: Create FirebaseMessagingService class
+
+You should have a class that extends `FirebaseMessagingService`. That service is where you get the device token to send to your backend to register for push notifications. To register for Botter push set it up like this:
+
+```
+public class MyFirebaseMessagingService extends FirebaseMessagingService {
+
+    private final BotterPushClient botterPushClient = new BotterPushClient();
+
+    @Override
+    public void onNewToken(@NonNull String s) {
+        super.onNewToken(s);
+        botterPushClient.sendTokenToBotter(getApplication(), s);
+        // do other host logic
+    }
+
+    @Override
+    public void onMessageReceived(@NonNull RemoteMessage remoteMessage) {
+        super.onMessageReceived(remoteMessage);
+        if (botterPushClient.isBotterPush(remoteMessage.getData())) {
+            botterPushClient.handlePush(getApplication(), remoteMessage.getData());
+        }
+        else{
+            // do other host logic
+        }
+    }
+}
+```
+
+Don't forget to register this service in the `AndroidManifest.xml` like this:
+
+```
+  <service android:name=".notifications.MyFirebaseMessagingService">
+      <intent-filter>
+          <action android:name="com.google.firebase.MESSAGING_EVENT" />
+      </intent-filter>
+ </service>
+```
+
+[back to top](#readme)
 
 
 
