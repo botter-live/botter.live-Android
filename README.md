@@ -206,7 +206,7 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
 Don't forget to register this service in the `AndroidManifest.xml` like this:
 
 ```
-  <service android:name=".notifications.MyFirebaseMessagingService">
+  <service android:name=".MyFirebaseMessagingService">
       <intent-filter>
           <action android:name="com.google.firebase.MESSAGING_EVENT" />
       </intent-filter>
