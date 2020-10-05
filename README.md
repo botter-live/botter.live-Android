@@ -106,7 +106,7 @@ You’ll need to update your manifest to use your application:
 ## Push Notifications (FCM)
 Below, we’ll show you how to send push notifications to your customers, with Firebase Cloud Messaging (FCM) in Botter.
 
-@@ Step :one:: Enable Google services for your app
+### Step :one:: Enable Google services for your app
 
 
 
