@@ -23,7 +23,7 @@ You can open Botter from a persistent button that sits over your app’s UI, Fro
 - [Current supported bot languages](#Supported-bot-languages)
 - [Customer support](#Customer-support)
 - [Customizations](#Customizations)
-- [Push Notifications (FCM)](#Push-Notifications-(FCM))
+- [Push Notifications (FCM)](#Push-Notifications-FCM)
 - [Customization parameters table](#Customizations-guidance-table)
 - [Licence](#Licence)
 
