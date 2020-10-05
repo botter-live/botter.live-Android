@@ -23,6 +23,7 @@ You can open Botter from a persistent button that sits over your app’s UI, Fro
 - [Current supported bot languages](#Supported-bot-languages)
 - [Customer support](#Customer-support)
 - [Customizations](#Customizations)
+- [Notifications](#Notifications)
 - [Customization parameters table](#Customizations-guidance-table)
 - [Licence](#Licence)
 
@@ -58,8 +59,6 @@ maven {
 implementation "com.bluecrunch:botter:1.3.8"
 ```
 
-[back to top](#readme)
-
 ## Integration
 
 <p>First, you'll need to get your Botter Android API key. To find this, just contact our support team to get you one.
@@ -90,14 +89,9 @@ You’ll need to update your manifest to use your application:
 </application>
 ```
 
-[back to top](#readme)
-
 ## Supported integration languages
 <li> Java. </li>
 <li> Kotlin. </li>
-
-
-[back to top](#readme)
 
 
 ## Current supported bot languages
@@ -105,14 +99,12 @@ You’ll need to update your manifest to use your application:
 <li> Arabic </li>
 
 
-[back to top](#readme)
-
-
 ## Customer support
 
 👋 Contact us with any integration/issues at [Botter - Contact us page](https://botter.ai/contact/). If you bump into any problems or need more support, just start a conversation with our support team.
 
-[back to top](#readme)
+## Notifications
+
 
 ## Customizations
 if you want anytime at any screen hide the Botter chat icon, just write the below line inside <strong>onResume()</strong> method : 
