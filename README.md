@@ -20,10 +20,10 @@ You can open Botter from a persistent button that sits over your app’s UI, Fro
 - [Installation](#Installation)
 - [Integration](#Integration)
 - [Supported integration languages](#Supported integration languages)
-- [Supported bot languages](#Current supported bot languages)
+- [Current supported bot languages](#Supported bot languages)
 - [Customer support](#Customer support)
 - [Customizations](#Customizations)
-- [Customizations guidance table](#Customization parameters table)
+- [Customization parameters table](#Customizations guidance table)
 - [Licence](#Licence)
 
 
