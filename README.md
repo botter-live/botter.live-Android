@@ -32,7 +32,7 @@ You can open Botter from a persistent button that sits over your app’s UI, Fro
 
 
 ## Installation
-Install Botter to see and talk to users of your Android app, Botter for Android supports API 23 and above.
+Install Botter to see and talk to users of your Android app, Botter for Android supports <strong>API 23</strong> and above.
 
 <li>Add the below lines under <strong>all projects -> repositories</strong> in build.gradle <strong>(project level)</strong>.</li>
 
