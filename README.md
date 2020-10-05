@@ -16,6 +16,19 @@ You can open Botter from a persistent button that sits over your app’s UI, Fro
 <img src="https://raw.githubusercontent.com/botter-live/botter.live-Android/master/.github/images/sample_green.jpg" width="200" alt="sample4">
 </p>
 
+## Contents
+- [Installation](#Installation)
+- [Integration](#Integration)
+- [Supported integration languages](#Supported integration languages)
+- [Supported bot languages](#Current supported bot languages)
+- [Customer support](#Customer support)
+- [Customizations](#Customizations)
+- [Customizations guidance table](#Customization parameters table)
+- [Licence](#Licence)
+
+
+
+
 
 ## Installation
 Install Botter to see and talk to users of your Android app, Botter for Android supports API 23 and above.
