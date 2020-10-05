@@ -113,6 +113,24 @@ Give the project a name and click <strong>‘Create Project’</strong>.
 
 <img src="https://raw.githubusercontent.com/botter-live/botter.live-Android/master/.github/images/fcm_create_project.png" alt="fcm_create">
 
+Once your project is set up, scroll down and select the <strong>‘Cloud Messaging’</strong> card.
+
+<img src="https://raw.githubusercontent.com/botter-live/botter.live-Android/master/.github/images/fcm_cloud_messaging.png" alt="fcm_cloud_messaging">
+
+Click on the Android icon to continue setup.
+
+<img src="https://raw.githubusercontent.com/botter-live/botter.live-Android/master/.github/images/fcm_setup_android.png" alt="fcm_android">
+
+Enter your app’s package name and click <strong>‘Register App’</strong>.
+
+<img src="https://raw.githubusercontent.com/botter-live/botter.live-Android/master/.github/images/fcm_register_app.png" alt="fcm_register_app">
+
+### Step :two:: Setup client to receive notifications
+
+Click the button <strong>"Download google-services.json"</strong> to download the config file. You’ll need to move that file into the same directory as your application level `build.gradle`.
+
+
+
 
 ## Customizations
 if you want anytime at any screen hide the Botter chat icon, just write the below line inside <strong>onResume()</strong> method : 
