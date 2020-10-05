@@ -57,6 +57,7 @@ maven {
 ```
 implementation "com.bluecrunch:botter:1.3.8"
 ```
+
 [back to top](#readme)
 
 ## Integration
@@ -88,22 +89,26 @@ You’ll need to update your manifest to use your application:
     android:name=".CustomApplication">
 </application>
 ```
+
 [back to top](#readme)
 
 ## Supported integration languages
 <li> Java. </li>
 <li> Kotlin. </li>
+
 [back to top](#readme)
 
 ## Current supported bot languages
 <li> English </li>
 <li> Arabic </li>
+
 [back to top](#readme)
 
 
 ## Customer support
 
 👋 Contact us with any integration/issues at [Botter - Contact us page](https://botter.ai/contact/). If you bump into any problems or need more support, just start a conversation with our support team.
+
 [back to top](#readme)
 
 ## Customizations
@@ -159,6 +164,7 @@ new BotterCustomization.Builder()
 .setAgentDefaultIcon(R.drawable.) // set the default icon for agent.
 .build());
 ```
+
 [back to top](#readme)
 
 
@@ -179,12 +185,14 @@ new BotterCustomization.Builder()
 | setAgentDefaultIcon | Used to set the default agent chant icon. |
 | setBotterRegularFontFamily | Used to set the primary font all over the chat. |
 | setBotterSemiBoldFontFamily | Used to set the secondary font all over the chat. |
+
 [back to top](#readme)
 
 
 # Licence 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this work except in compliance with the License. You may obtain a copy of at:
 <a href='https://opensource.org/licenses/apache2.0.php'>https://opensource.org/licenses/apache2.0.php</a>
+
 [back to top](#readme)
 
 ### Thank you 
