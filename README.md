@@ -23,7 +23,7 @@ You can open Botter from a persistent button that sits over your app’s UI, Fro
 - [Current supported bot languages](#Supported-bot-languages)
 - [Customer support](#Customer-support)
 - [Customizations](#Customizations)
-- [Notifications](#Notifications)
+- [Push Notifications (FCM)](#Push-Notifications-(FCM))
 - [Customization parameters table](#Customizations-guidance-table)
 - [Licence](#Licence)
 
@@ -103,7 +103,7 @@ You’ll need to update your manifest to use your application:
 
 👋 Contact us with any integration/issues at [Botter - Contact us page](https://botter.ai/contact/). If you bump into any problems or need more support, just start a conversation with our support team.
 
-## Notifications
+## Push Notifications (FCM)
 
 
 ## Customizations
