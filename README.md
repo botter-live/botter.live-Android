@@ -111,7 +111,7 @@ If you already have a Firebase project with notifications enabled you can skip t
 
 Give the project a name and click <strong>‘Create Project’</strong>.
 
-<img src="https://raw.githubusercontent.com/botter-live/botter.live-Android/master/.github/images/sfcm_create_project.png" alt="fcm_create">
+<img src="https://raw.githubusercontent.com/botter-live/botter.live-Android/master/.github/images/fcm_create_project.png" alt="fcm_create">
 
 
 ## Customizations
