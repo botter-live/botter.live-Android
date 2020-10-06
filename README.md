@@ -157,7 +157,11 @@ Finally, click the settings icon on top left and select <strong>‘Project setti
 <img src="https://raw.githubusercontent.com/botter-live/botter.live-Android/master/.github/images/fcm_server_key.png" alt="fcm_server_key">
 
 
-Open your Botter app’s settings and select <strong>‘Installation -> Android’</strong>. Then find the <strong>‘Enable Push Notifications’</strong> section. Here you'll be able to paste and save your Server API key.
+Open your Botter app’s dashboard and select <strong>‘Settings’</strong>. Then find the <strong>‘Server Key’</strong> field. Here you'll be able to paste and save your Server API key.
+
+
+<img src="https://raw.githubusercontent.com/botter-live/botter.live-Android/master/.github/images/fcm_dashboard_settings.png" alt="fcm_settings">
+
 
 
 ### Step :four:: Setting your FCM icon (optional)
