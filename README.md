@@ -3,10 +3,10 @@
 ## Onboard, retain and support mobile users at scale
 Engage customers with in‑app messages and support them with an integrated knowledge base and help desk.
 
-## The Botter Messenger
-The [Botter Messenger](https://botter.ai/) enables you to use it like a Messenger in your app, have conversations with your customers, send rich outbound messages, and track events.
-The Botter SDK is the home for the conversations your customers have with you, and the place where they can self-serve for support or to learn more about your product.
-You can open Botter from a persistent button that sits over your app’s UI, From there, your customer can  start a conversation, replies in both directions happen in real time.
+## The BOTTER Messenger
+The [BOTTER Messenger](https://botter.ai/) enables you to use it like a Messenger in your app, have conversations with your customers, send rich outbound messages, and track events.
+The BOTTER SDK is the home for the conversations your customers have with you, and the place where they can self-serve for support or to learn more about your product.
+You can open BOTTER from a persistent button that sits over your app’s UI, From there, your customer can  start a conversation, replies in both directions happen in real time.
 
 ## Sceenshots
 <p float="left">
@@ -32,7 +32,7 @@ You can open Botter from a persistent button that sits over your app’s UI, Fro
 
 
 ## Installation
-Install Botter to see and talk to users of your Android app, Botter for Android supports <strong>API 23</strong> and above.
+Install BOTTER to see and talk to users of your Android app, BOTTER for Android supports <strong>API 23</strong> and above.
 
 <li>Add the below lines under <strong>all projects -> repositories</strong> in build.gradle <strong>(project level)</strong>.</li>
 
@@ -53,16 +53,16 @@ maven {
         targetCompatibility JavaVersion.VERSION_1_8
     } 
 ```
-<li> add Botter dependency under <strong>dependencies { </strong> section  
+<li> add BOTTER dependency under <strong>dependencies { </strong> section  
  
 ```
-implementation "com.bluecrunch:botter:1.4.0"
+implementation "com.bluecrunch:botter:1.4.1"
 ```
 
 ## Integration
 
-<p>First, you'll need to get your Botter Android API key. To find this, just contact our support team to get you one.
-  Then, initialize Botter by calling the following in the <strong>onCreate()</strong> method of your application class</p>
+<p>First, you'll need to get your BOTTER Android API key. To find this, just contact our support team to get you one.
+  Then, initialize BOTTER by calling the following in the <strong>onCreate()</strong> method of your application class</p>
   
 ```
 Botter.initialize(this,"Your API Key",
@@ -101,10 +101,10 @@ You’ll need to update your manifest to use your application:
 
 ## Customer support
 
-👋 Contact us with any integration/issues at [Botter - Contact us page](https://botter.ai/contact/). If you bump into any problems or need more support, just start a conversation with our support team.
+👋 Contact us with any integration/issues at [BOTTER - Contact us page](https://botter.ai/contact/). If you bump into any problems or need more support, just start a conversation with our support team.
 
 ## Push Notifications (FCM)
-Below, we’ll show you how to send push notifications to your customers, with Firebase Cloud Messaging (FCM) in Botter.
+Below, we’ll show you how to send push notifications to your customers, with Firebase Cloud Messaging (FCM) in BOTTER.
 
 ### Step :one:: Enable Google services for your app
 If you already have a Firebase project with notifications enabled you can skip to the next step. Otherwise go to the [FCM Console page](https://console.firebase.google.com/u/0/) and create a new project following these steps:
@@ -149,7 +149,7 @@ It is important that this is at the very end of the file.
 
 Click the <strong>Next</strong> button and then skip the verification step.
 
-### Step :three:: Add your Server key to Botter for Android settings
+### Step :three:: Add your Server key to BOTTER for Android settings
 
 Finally, click the settings icon on top left and select <strong>‘Project settings’</strong>, then <strong>‘Cloud Messaging tab’</strong> and copy your Server key.
 
@@ -157,7 +157,7 @@ Finally, click the settings icon on top left and select <strong>‘Project setti
 <img src="https://raw.githubusercontent.com/botter-live/botter.live-Android/master/.github/images/fcm_server_key.png" alt="fcm_server_key">
 
 
-Open your Botter app’s dashboard and select <strong>‘Settings -> Configure Notifications’</strong>. Then find the <strong>‘Server Key’</strong> field. Here you'll be able to paste and save your Server API key.
+Open your BOTTER app’s dashboard and select <strong>‘Settings -> Configure Notifications’</strong>. Then find the <strong>‘Server Key’</strong> field. Here you'll be able to paste and save your Server API key.
 
 
 <img src="https://raw.githubusercontent.com/botter-live/botter.live-Android/master/.github/images/fcm_dashboard_settings.png" alt="fcm_settings">
@@ -180,7 +180,7 @@ We recommend following these [material design guidelines](https://material.io/de
 
 ### Step :five:: Create FirebaseMessagingService class
 
-You should have a class that extends `FirebaseMessagingService`. That service is where you get the device token to send to your backend to register for push notifications. To register for Botter push set it up like this:
+You should have a class that extends `FirebaseMessagingService`. That service is where you get the device token to send to your backend to register for push notifications. To register for BOTTER push set it up like this:
 
 ```
 public class MyFirebaseMessagingService extends FirebaseMessagingService {
@@ -222,7 +222,7 @@ Don't forget to register this service in the `AndroidManifest.xml` like this:
 
 
 ## Customizations
-if you want anytime at any screen hide the Botter chat icon, just write the below line inside <strong>onResume()</strong> method : 
+if you want anytime at any screen hide the BOTTER chat icon, just write the below line inside <strong>onResume()</strong> method : 
 
 ```
 Botter.client().setLauncherVisibility(Botter.Visibility.GONE);
@@ -246,7 +246,7 @@ If you have your custom button , and want to show chat screen directly then you 
 Botter.client().openChatActivity();
 ```
 
-You can customize Botter with your preferred settings, when you initialize Botter instance inside <strong>onCreate</strong> method of your Application class like below : 
+You can customize BOTTER with your preferred settings, when you initialize BOTTER instance inside <strong>onCreate</strong> method of your Application class like below : 
 
 ```
 Botter.initialize(this,
@@ -289,7 +289,7 @@ new BotterCustomization.Builder()
 | setBotterHeadlineText , setBotterHeadlineTextColor | Used to set the welcome screen header title text and color. | <img src="https://raw.githubusercontent.com/botter-live/botter.live-Android/master/.github/images/4.jpg" alt="4">|
 | seBotterWelcomeText , setBotterWelcomeTextColor | Used to set the welcome screen header subtitle text and color. | <img src="https://raw.githubusercontent.com/botter-live/botter.live-Android/master/.github/images/3.jpg" alt="3">|
 |setBotterChatHeaderTitle , setBotterChatHeaderTitleColor | Used to set the main chat header title text and color | <img src="https://raw.githubusercontent.com/botter-live/botter.live-Android/master/.github/images/6.jpg" alt="6">|
-| setBotterChatBubbleColor , setBotterChatBubbleTextColor | Used to set the botter message bubble bg color and it’s text color. | <img src="https://raw.githubusercontent.com/botter-live/botter.live-Android/master/.github/images/7.jpg" alt="7">|
+| setBotterChatBubbleColor , setBotterChatBubbleTextColor | Used to set the BOTTER message bubble bg color and it’s text color. | <img src="https://raw.githubusercontent.com/botter-live/botter.live-Android/master/.github/images/7.jpg" alt="7">|
 | setSenderChatBubbleColor , setSenderChatBubbleTextColor | Used to set the sender/user message bubble bg color and it’s text color. | <img src="https://raw.githubusercontent.com/botter-live/botter.live-Android/master/.github/images/8.jpg" alt="8">|
 | setWelcomeBrandLogo | Used to set the welcome screen brand logo. |
 | setAgentDefaultIcon | Used to set the default agent chant icon. |
