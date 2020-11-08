@@ -24,6 +24,7 @@ You can open BOTTER from a persistent button that sits over your app’s UI, Fro
 - [Customer support](#Customer-support)
 - [Push Notifications (FCM)](#Push-Notifications-FCM)
 - [Customizations](#Customizations)
+- [On-premise extra customizations](#On-Premise-extra-customizations)
 - [Customization parameters table](#Customizations-guidance-table)
 - [Licence](#Licence)
 
@@ -234,6 +235,13 @@ and you can show it anytime using the below line at <strong>onResume()</strong> 
 Botter.client().setLauncherVisibility(Botter.Visibility.VISIBLE);
 ```
 
+Note that you can specifiy a list of activities to hide BOTTER into them like below : 
+
+```
+Botter.client().hideLauncherInActivities(activitiesToHide); // activitiesToHide is an ArrayList holds the activities to hide BOTTER (i.e. MainActivity.class)
+
+```
+
 You can also change margins around the launcher button using : 
 
 ```
@@ -255,9 +263,12 @@ new BotterCustomization.Builder()
 .setLauncherGravity(BotterCustomization.LauncherGravity.LEFT) // set the launcher icon to the left/right of your screen. (default right).
 .setDefaultLocal(BotterCustomization.Local.AR) // set default bot language either AR/EN. (default EN).
 .setLauncherIcon(R.drawable.) //set the launcher icon.
-.setBotterLogo(R.drawable.) //set the chat logo & seen icon logo.
+.setBotterLogo(R.drawable.) //set the seen icon logo.
+.setBotterHeaderLogo(R.drawable.) //set the chat header logo.
 .setWelcomeBrandLogo(R.drawable.) //set the welcome screen brand logo.
 .setBotterAccentColor(R.color.) //set the chat accent color.
+.setBotterHeaderAccentColor(R.color.) // set the chat header accent color.
+.setBotterLauncherAccentColor(R.color.) // set the launcher accent color.
 .setBotterHeadlineText("") // set welcome screen headline text.
 .setBotterHeadlineTextColor(R.color.) // set welcome screen headline text color.
 .seBtotterWelcomeText("") // set welcome screen headline welcome message.
@@ -275,8 +286,35 @@ new BotterCustomization.Builder()
 .build());
 ```
 
+<strong>Note</strong>
+
+You can edit the initial customizations paramters at runtime using client 
+(i.e. when changing your app language and want to change BOTTER accordingly) like below : 
+
+```
+ Botter.client().updateCustomizations(Botter.client().getOldCustomizations()
+                .setDefaultLocal(BotterCustomization.Local.AR)
+                .setBotterHeadlineText("Arabic Text")
+                .build());
+``` 
+
 [back to top](#readme)
 
+## On-premise extra customizations
+
+for on-premise servers you can easily set (socket, API and upload) URLs using same builder method in Application class: 
+```
+Botter.initialize(this,
+"Your API Key"
+new BotterCustomization.Builder() 
+......
+.setSocketURL("wss://...") // set the socket url for the bot (must start with wss:// or ws://)
+.setApiURL("https://...") // set the base API url for the bot (must start with https:// or http://)
+.setUploadApiURL("https://...") // set the upload-attachments API for the bot (must start with https:// or http://)
+.build());
+```
+
+[back to top](#readme)
 
 ## Customization parameters table:
 | Name  | Description | Screenshot |
@@ -285,7 +323,7 @@ new BotterCustomization.Builder()
 | setDefaultLocal | To set the default bot language either AR/EN. | 
 | setLauncherIcon | To change the launcher icon. | <img src="https://raw.githubusercontent.com/botter-live/botter.live-Android/master/.github/images/1.jpg" alt="1">|
 | setBotterLogo | To set the chat main logo. | <img src="https://raw.githubusercontent.com/botter-live/botter.live-Android/master/.github/images/2.jpg" alt="2">|
-| setBotterAccentColor | This is the main color used all over the chat like launcher bg color, welcome screen top area bg color, chat header, ect… I.e. in the image accent color is purple. | <img src="https://raw.githubusercontent.com/botter-live/botter.live-Android/master/.github/images/main_color.jpg" alt="main_color">|
+| setBotterAccentColor | This is the main color used all over the chat like welcome screen top area bg color, ect… I.e. in the image accent color is purple. | <img src="https://raw.githubusercontent.com/botter-live/botter.live-Android/master/.github/images/main_color.jpg" alt="main_color">|
 | setBotterHeadlineText , setBotterHeadlineTextColor | Used to set the welcome screen header title text and color. | <img src="https://raw.githubusercontent.com/botter-live/botter.live-Android/master/.github/images/4.jpg" alt="4">|
 | seBotterWelcomeText , setBotterWelcomeTextColor | Used to set the welcome screen header subtitle text and color. | <img src="https://raw.githubusercontent.com/botter-live/botter.live-Android/master/.github/images/3.jpg" alt="3">|
 |setBotterChatHeaderTitle , setBotterChatHeaderTitleColor | Used to set the main chat header title text and color | <img src="https://raw.githubusercontent.com/botter-live/botter.live-Android/master/.github/images/6.jpg" alt="6">|
