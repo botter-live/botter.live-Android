@@ -235,7 +235,7 @@ and you can show it anytime using the below line at <strong>onResume()</strong> 
 Botter.client().setLauncherVisibility(Botter.Visibility.VISIBLE);
 ```
 
-Note that you can specifiy a list of activities to hide BOTTER into them like below : 
+Note that you can specify a list of activities to hide BOTTER into them like below : 
 
 ```
 Botter.client().hideLauncherInActivities(activitiesToHide); // activitiesToHide is an ArrayList holds the activities to hide BOTTER (i.e. MainActivity.class)
