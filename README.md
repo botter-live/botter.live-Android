@@ -288,7 +288,7 @@ new BotterCustomization.Builder()
 
 <strong>Note</strong>
 
-You can edit the initial customizations paramters at runtime using `Botter.client()`
+You can edit the initial customizations parameters at runtime using `Botter.client()`
 (i.e. when changing your app language and want to change BOTTER accordingly) like below : 
 
 ```
