@@ -316,7 +316,7 @@ new BotterCustomization.Builder()
 
 [back to top](#readme)
 
-## Customization parameters table:
+## Customization parameters table
 | Name  | Description | Screenshot |
 | ------------- | ------------- | ------------- |
 | setLauncherGravity | To set the launcher to the right/left of the screen. | 
