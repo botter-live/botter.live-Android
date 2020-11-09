@@ -25,7 +25,7 @@ You can open BOTTER from a persistent button that sits over your app’s UI, Fro
 - [Push Notifications (FCM)](#Push-Notifications-FCM)
 - [Customizations](#Customizations)
 - [On-premise extra customizations](#On-Premise-extra-customizations)
-- [Customization parameters table](#Customizations-parameters-table)
+- [Customizations parameters table](#Customizations-parameters-table)
 - [Licence](#Licence)
 
 
@@ -316,7 +316,7 @@ new BotterCustomization.Builder()
 
 [back to top](#readme)
 
-## Customization parameters table
+## Customizations parameters table
 | Name  | Description | Screenshot |
 | ------------- | ------------- | ------------- |
 | setLauncherGravity | To set the launcher to the right/left of the screen. | 
