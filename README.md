@@ -25,7 +25,7 @@ You can open BOTTER from a persistent button that sits over your app’s UI, Fro
 - [Push Notifications (FCM)](#Push-Notifications-FCM)
 - [Customizations](#Customizations)
 - [On-premise extra customizations](#On-Premise-extra-customizations)
-- [Share Location (Optional)](#Share-location-feature)
+- [Share Location (Optional)](#Share-location-feature-Optional)
 - [Customizations parameters table](#Customizations-parameters-table)
 - [Licence](#Licence)
 
