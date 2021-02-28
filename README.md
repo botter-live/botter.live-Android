@@ -26,6 +26,7 @@ You can open BOTTER from a persistent button that sits over your app’s UI, Fro
 - [Customizations](#Customizations)
 - [On-premise extra customizations](#On-Premise-extra-customizations)
 - [Share Location (Optional)](#Share-location-feature-Optional)
+- [Custom User Attributes (Optional)](#Custom-user-attributes-Optional)
 - [Customizations parameters table](#Customizations-parameters-table)
 - [Licence](#Licence)
 
@@ -346,6 +347,44 @@ new BotterCustomization.Builder()
 ```
 
 [back to top](#readme)
+
+
+## Custom User Attributes (Optional)
+
+If you want to pass custom user attributes to BOTTER SDK instead of showing start forum or along with this forum then you can use the `UserAttributes.Builder()` class to create and pass your custom attributes to the SDK through the `Botter.client()` like below : 
+
+```
+UserAttributes userAttributes = new UserAttributes.Builder()
+.withCustomAttribute("custom_key","custom_value")
+.withCustomAttribute("custom_key","custom_value")
+.build();
+```
+
+Or if you want to buid your hash map at once like : 
+
+```
+Map<String,Object> attrsMap = new HashMap<>();
+attrsMap.put("custom_key","custom_value");
+attrsMap.put("custom_key","custom_value");
+
+UserAttributes userAttributes = new UserAttributes.Builder()
+.withCustomAttributes(attrsMap)
+.build();
+```
+
+then pass it to `Botter.client()` : 
+
+```
+Botter.client().updateUser(userAttributes);
+```
+
+<strong>Important : </strong>
+
+To make sure that you have your user attributes ready, you need to use the above code in your main/home activity i.e. `MainActiviy` class's `onCreate()` method.
+
+
+[back to top](#readme)
+
 
 ## Customizations parameters table
 | Name  | Description | Screenshot |
