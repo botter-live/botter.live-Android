@@ -351,7 +351,7 @@ new BotterCustomization.Builder()
 
 ## Custom User Attributes (Optional)
 
-If you want to pass custom user attributes to BOTTER SDK instead of showing start forum or along with this forum then you can use the `UserAttributes.Builder()` class to create and pass your custom attributes to the SDK through the `Botter.client()` like below : 
+If you want to pass custom user attributes to BOTTER SDK instead of showing start form or along with this form then you can use the `UserAttributes.Builder()` class to create and pass your custom attributes to the SDK through the `Botter.client()` like below : 
 
 ```
 UserAttributes userAttributes = new UserAttributes.Builder()
