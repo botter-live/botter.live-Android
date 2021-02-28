@@ -25,6 +25,7 @@ You can open BOTTER from a persistent button that sits over your app’s UI, Fro
 - [Push Notifications (FCM)](#Push-Notifications-FCM)
 - [Customizations](#Customizations)
 - [On-premise extra customizations](#On-Premise-extra-customizations)
+- [Share Location (Optional)](#Share-location)
 - [Customizations parameters table](#Customizations-parameters-table)
 - [Licence](#Licence)
 
@@ -311,6 +312,34 @@ new BotterCustomization.Builder()
 .setSocketURL("wss://...") // set the socket url for the bot (must start with wss:// or ws://)
 .setApiURL("https://...") // set the base API url for the bot (must start with https:// or http://)
 .setUploadApiURL("https://...") // set the upload-attachments API for the bot (must start with https:// or http://)
+.build());
+```
+
+[back to top](#readme)
+
+## Share location feature (Optional)
+
+
+### Step :one:: Get Google static map key for your app
+
+If you want to enable share current location feature you have to provide google static maps API key, 
+you need to open [Google cloud console](https://console.cloud.google.com/apis/credentials?) and make sure you choose the desired project,
+from the left menu you need to choose Credentials tab then press on (+ CREATE CREDENTIALS) and create your static map key (it's recommended to restrict your key to be used with static maps only) - please refer to image below :
+
+
+<img src="https://raw.githubusercontent.com/botter-live/botter.live-Android/master/.github/images/static_map.png" alt="static_map">
+
+
+### Step :two:: Provide the static map key to BOTTER
+
+You need to pass the key from step 1 to BOTTER initialize method in the app class to activate the share location feature like below : 
+
+
+```
+Botter.initialize(this,
+"Your API Key"
+new BotterCustomization.Builder() 
+.enableShareLocationWithGoogleStaticMapKey("You google static map key here") // To enable share location feature.
 .build());
 ```
 
