@@ -59,7 +59,7 @@ maven {
 <li> add BOTTER dependency under <strong>dependencies { </strong> section  
  
 ```
-implementation "com.bluecrunch:botter:1.5.1"
+implementation "com.bluecrunch:botter:1.5.2"
 ```
 
 ## Integration
@@ -284,6 +284,7 @@ new BotterCustomization.Builder()
 .setBotterRegularFontFamily(R.font.) // set chat primary font.
 .setBotterSemiBoldFontFamily(R.font.) // set chat secondry font.
 .setHasFAQs(true) // Determine if chat has FAQs or not.
+.setHasStartForm(false) // Determine if chat will show the start form or not
 .setAgentDefaultIcon(R.drawable.) // set the default icon for agent.
 .build());
 ```
