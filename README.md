@@ -59,7 +59,7 @@ maven {
 <li> add BOTTER dependency under <strong>dependencies { </strong> section  
  
 ```
-implementation "com.bluecrunch:botter:1.5.3"
+implementation "com.bluecrunch:botter:1.6.0"
 ```
 
 ## Integration
@@ -286,6 +286,19 @@ new BotterCustomization.Builder()
 .setHasFAQs(true) // Determine if chat has FAQs or not.
 .setHasStartForm(false) // Determine if chat will show the start form or not
 .setAgentDefaultIcon(R.drawable.) // set the default icon for agent.
+// use this method to add a card with custom action in the welcome screen like this
+.addCustomAction(R.drawable.ic_register, R.string.register, new OnActionClickListener() {
+                            @Override
+                            public void onActionClick() {
+                            }
+                        })
+// or you can path the argument like this 
+.addCustomAction(R.drawable.ic_register, "Register", new OnActionClickListener() {
+                            @Override
+                            public void onActionClick() {
+                            }
+                        })
+
 .build());
 ```
 
@@ -299,6 +312,34 @@ You can edit the initial customizations parameters at runtime using `Botter.clie
                 .setDefaultLocal(BotterCustomization.Local.AR)
                 .setBotterHeadlineText("Arabic Text")
                 .build());
+``` 
+<strong>Note</strong>
+you can also clear the current active session and user data that BOTTER using Botter client 
+(i.e. when user logout from your app ) like below : 
+
+```
+Botter.client().updateCustomizations(Botter.client().getOldCustomizations()
+                   .setHasStartForm(true)// to show the form in botter welcome screen
+                   .build());
+Botter.client().resetUserAttributes();
+``` 
+<strong>Note</strong>
+or you can also provide BOTTER client with your user data 
+(i.e. when user logged in to  your app ,
+    and you don't want to show the form in the welcome screen) like below : 
+
+```
+  UserAttributes userAttributes = new UserAttributes.Builder()
+                .withCustomAttribute("id","UserID")
+                .withCustomAttribute("email","email@email.com")
+                .withCustomAttribute("mobile","+20123456788")
+                .withCustomAttribute("first_name","John")
+                .withCustomAttribute("last_name","Doe")
+                .build();
+        Botter.client().updateCustomizations(Botter.client().getOldCustomizations()
+                .setHasStartForm(false)
+                .build());
+        Botter.client().updateUser(userAttributes);
 ``` 
 
 [back to top](#readme)
