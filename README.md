@@ -292,7 +292,7 @@ new BotterCustomization.Builder()
                             public void onActionClick() {
                             }
                         })
-// or you can path the argument like this 
+// or you can pass the argument like this 
 .addCustomAction(R.drawable.ic_register, "Register", new OnActionClickListener() {
                             @Override
                             public void onActionClick() {
