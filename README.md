@@ -59,7 +59,7 @@ maven {
 <li> add BOTTER dependency under <strong>dependencies { </strong> section  
  
 ```
-implementation "com.bluecrunch:botter:1.6.0"
+implementation "com.bluecrunch:botter:1.6.1"
 ```
 
 ## Integration
